@@ -61,7 +61,7 @@
             color:color-mix(in srgb,black 70% , white 30%);
             font-size: 50px;
             height:30px ;
-            text-shadow: 0 2px 4px  #ffffff;
+            text-shadow: 0 2px 4px  white;
         }
 
         .response{
@@ -97,7 +97,7 @@
     <script>
         function speak() {
             const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
-            recognition.lang = 'en-IN';
+            recognition.lang = 'hi-IN';
 
             recognition.onresult = function(event) {
                 const result = event.results[0][0].transcript;
@@ -115,7 +115,7 @@
             const utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = 'hi-IN';
             speechSynthesis.speak(utterance);}
-        alert("  HII , I AM VOICE ROBO , CREATE BY MR. HIMANSHU , ...... .... ... WELCOME ROBO TO SITE ❤️")
+        alert("  HI , I AM VOICE ROBO , CREATE BY MR. HIMANSHU , ...... .... ... WELCOME ROBO TO SITE ❤️")
 
     </script>
 </body>
